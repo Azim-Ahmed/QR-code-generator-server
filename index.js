@@ -60,7 +60,7 @@ client.connect((err) => {
     });
   });
 
-  app.get('/qrcode', (req, res) => {
+  app.get('/qrcodeData', (req, res) => {
     qrcodeCollection.find({}).toArray((err, documents) => {
       res.send(documents);
     });
